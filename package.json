@@ -12,7 +12,8 @@
   },
   "engines": {
     "node": "7.6.0",
-    "npm": "4.1.2"
+    "npm": "4.1.2",
+    "webpack": "1.13.3"
   },
   "repository": {
     "type": "git",
