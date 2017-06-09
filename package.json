@@ -8,7 +8,7 @@
     "start:dev": "nodemon src/devServer",
     "start:prod": "node src/prodServer",
     "build": "webpack --config webpack.prod.config.js --progress --profile --colors",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "node": "7.6.0",
