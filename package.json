@@ -50,7 +50,6 @@
     "sass-loader": "^6.0.5",
     "stats-webpack-plugin": "^0.6.0",
     "style-loader": "^0.18.2",
-    "webpack-cleanup-plugin": "^0.5.1",
     "webpack-dev-middleware": "^1.10.2",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-hot-server-middleware": "^0.1.0"
