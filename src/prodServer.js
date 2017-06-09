@@ -9,4 +9,4 @@ const Stats = require(ClientStatsPath);
 
 app.use(ServerRenderer(Stats));
 
-app.listen(8080);
+app.listen(process.env.PORT || 5000);
