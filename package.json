@@ -27,6 +27,10 @@
   },
   "homepage": "https://github.com/MiguelKorn/AffiliateSite#readme",
   "dependencies": {
+    "axios": "^0.16.2",
+    "mysql-loader": "0.0.4",
+    "mysql2": "^1.3.5",
+    "node-mysql": "^0.4.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-helmet": "^5.1.3",

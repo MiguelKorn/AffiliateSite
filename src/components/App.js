@@ -2,10 +2,27 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Nav from './Nav';
 import {Helmet} from "react-helmet";
+import axios from 'axios';
 
 import '../styles/main.scss';
 
 class Homepage extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            items: []
+        }
+    }
+    componentDidMount() {
+        axios.get('http://miguelkorn.nl/School/iProject/api.php').then((res) => {
+            console.log('get axios');
+            console.log(res);
+            this.setState = {
+                items: res
+            }
+        })
+    }
     render() {
         return (
             <div>
@@ -14,6 +31,8 @@ class Homepage extends Component {
                 />
                 <Nav />
                 <h1>Homepage</h1>
+                <p>test</p>
+                <p>{this.state.item}</p>
             </div>
         );
     }
