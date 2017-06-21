@@ -24,6 +24,7 @@ class Homepage extends Component {
         })
     }
     render() {
+        const ids = this.state.items.map((item)=> <p>{item.id}</p>);
         return (
             <div>
                 <Helmet
@@ -32,7 +33,7 @@ class Homepage extends Component {
                 <Nav />
                 <h1>Homepage</h1>
                 <p>test</p>
-                <p>{this.state.item}</p>
+                <p>{ids}</p>
             </div>
         );
     }
