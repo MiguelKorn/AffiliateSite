@@ -8,7 +8,7 @@ export default class OfferGrid extends React.Component {
                 {this.props.offers.map((offer) => {
                     const flashSale = Number(offer.flash_sale);
                     return (
-                        <div className="col-sm-4 col-md-4" key={offer.id}>
+                        <div className="col-sm-3 col-md-3" key={offer.id}>
                             <div className="thumbnail" style={{height: '350px'}}>
                                 <img src={offer.img} alt={offer.name} style={{height: '170px'}}/>
                                 <div className="caption">

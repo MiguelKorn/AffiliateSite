@@ -12,7 +12,7 @@ export class Home extends React.Component {
         this.state = {
             api: new API(),
             offers: [],
-            itemsPerPage: 6,
+            itemsPerPage: 8,
             page: 0,
         };
 
